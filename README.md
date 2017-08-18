@@ -6,6 +6,8 @@ Quickly deploy an endpoint to handle your `contact us` form on your static websi
 
 <a href="https://console.aws.amazon.com/cloudformation/home#/stacks/new?stackName=&templateURL=https://s3.amazonaws.com/thestackshack/serverless-contact-us-form/cloudformation.yml"><img src="https://s3.amazonaws.com/cloudformation-examples/cloudformation-launch-stack.png"/></a>
 
+You can get your reCAPTCHA secret here:  https://www.google.com/recaptcha/admin#list
+
 ## What AWS resources does this template use?
 * Lambda (API Function)
 * API Gateway (HTTP proxy to Lambda)

@@ -19,7 +19,7 @@ You can get your reCAPTCHA secret here:  https://www.google.com/recaptcha/admin#
 
 ## HTML Form
 ```
-<form action="https://3lvxa9akr5.execute-api.us-east-1.amazonaws.com/prod/api" method="POST" id="contact-us-form">
+<form action="<your api gateway url>" method="POST" id="contact-us-form">
     <div class="form-group">
         <label for="nameInputEmail1">Name</label>
         <input type="text" class="form-control" id="nameInputEmail1" name="name" placeholder="Full name">

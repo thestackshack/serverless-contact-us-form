@@ -127,8 +127,14 @@ Resources:
                       var captchaResponse = JSON.parse(chunk);
                       if (captchaResponse.success) {
                           var sns = new AWS.SNS();
+                          delete input_data['g-recaptcha-response'];
+                          var message = "";
+                          Object.keys(input_data).forEach(function(key) {
+                             message += key+':\n';
+                             message += '\t'+input_data[key]+'\n\n';
+                          });
                           var params = {
-                              Message: JSON.stringify(input_data, null, 3),
+                              Message: message,
                               Subject: "${AWS::StackName} Contact Us",
                               TopicArn: "${ContactUsSNSTopic}"
                           };
